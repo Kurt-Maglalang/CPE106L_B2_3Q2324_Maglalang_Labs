@@ -7,8 +7,6 @@ these functions in a module named stats.py. Also include a function named mean, 
 Each function expects a list of numbers as an argument and returns a single number.
 """
 
-
-
 def mean(nums): 
     """
     Returns the average of a set of numbers
@@ -19,7 +17,6 @@ def mean(nums):
         print("Exception in Mean:", e)
         return None
     
-
 def median(nums):
     """
     Returns the numbers at the midpoint of a sorted list
@@ -35,8 +32,6 @@ def median(nums):
     except Exception as e:
         print("Exception in Median:",e)
         return None
-    
-
 
 def mode(nums):
     """

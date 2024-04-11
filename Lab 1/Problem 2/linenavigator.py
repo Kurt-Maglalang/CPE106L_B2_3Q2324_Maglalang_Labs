@@ -5,18 +5,18 @@ the user for a line number. Actual line numbers range from 1 to the number of li
 Otherwise, the program prints the line associated with that number.9
 """ 
 
-# Prompt File Name
+# Prompt File Name & Open File
 fileName = input("Please enter File Name: ")
-
-# Open File
-"""
-f = open("demofile.txt", "r")
-print(f.read())
-"""
-file = open(filename)
+file = open(fileName)
 
 # Pass Lines of text into a list
-
-# Loop to print the number of lines in the files
+lines = file.readlines()
 
 # Prompt user for a line number (1 and above, 0 to quit)
+while True:
+    print("Total Number of Lines in Text file: ", len(lines))
+    lineNum = input("Please enter a line number: ")
+    if lineNum == 0:
+        break
+    lineNum = int(lineNum) - 1
+    print(lines[lineNum])
